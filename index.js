@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         message: formData.get('message')
                     };
                     try {
-                        const response = await fetch('https://portfolio-website-ashen-beta-44.vercel.app', {
+                        const response = await fetch('https://portfolio-website-6zsd.onrender.com', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
