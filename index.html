@@ -1,198 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Madhav Raj - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563eb", // Royal Blue for primary actions/links
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#111827",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1f2937",
+                        "text-light": "#1f2937",
+                        "text-dark": "#f3f4f6",
+                        "text-muted-light": "#6b7280",
+                        "text-muted-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                    boxShadow: {
+                        'elegant': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'elegant-hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    <!-- Header/Navigation -->
-    <header>
-        <nav>
-            <a href="#hero" class="logo">Portfolio</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#certificates">Certifications</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-300">
+<header class="w-full py-8 md:py-12 border-b border-gray-200 dark:border-gray-800 bg-surface-light dark:bg-surface-dark shadow-sm transition-colors duration-300">
+<div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<h1 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Madhav Raj</h1>
+<nav class="flex flex-wrap justify-center gap-6 text-sm font-medium text-text-muted-light dark:text-text-muted-dark">
+<a class="hover:text-primary transition-colors" href="#about">About</a>
+<a class="hover:text-primary transition-colors" href="#experience">Experience</a>
+<a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 py-12 md:py-20 space-y-24">
+<section class="flex flex-col md:flex-row gap-8 items-start animate-fade-in" id="about">
+<div class="space-y-6 flex-1">
+<p class="text-xl md:text-2xl leading-relaxed text-gray-700 dark:text-gray-300 font-light font-display">
+                    Enthusiastic Computer Science student passionate about leveraging technology to solve problems through real-world AI/ML projects and open-source work.
+                </p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="mailto:madhav70sharma@gmail.com">
+<span class="material-icons text-base">email</span> Email
+                    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="tel:+918053719076">
+<span class="material-icons text-base">phone</span> +91 80537-19076
+                    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="https://www.linkedin.com/in/madhav-raj-sharma/" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-linkedin text-base"></i> LinkedIn
+                    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="https://github.com/Madhav064" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-github text-base"></i> GitHub
+                    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="https://leetcode.com/u/madhav72/" target="_blank" rel="noopener noreferrer">
+<span class="material-icons text-base">code</span> Leetcode
+                    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="https://www.credly.com/users/madhav-raj-sharma/badges#credly" target="_blank" rel="noopener noreferrer">
+<i class="fas fa-medal text-base"></i> Credly
+                    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary transition-all text-sm font-medium" href="https://www.instagram.com/madhav_80537/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram text-base"></i> Instagram
+                    </a>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hi, I'm</h1>
-                <h2 class="hero-name"><span class="name-text">Madhav Raj</span></h2>
-                <p>B.Tech in Computer Science  <br> @ National Institute of Technology, Delhi <br> Web Developer | Blockchain & AI Enthusiast | Cybersecurity</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-photo">
-                <img src="./images/231210064_Madhav_raj.jpg" alt="Madhav Raj Photo">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-img">
-                <img src="./images/profile .jpg" alt="Profile Photo">
-            </div>
-            <div class="about-text">
-                <p>I am a passionate developer specializing in web development, blockchain, cybersecurity, and AI/ML. I love building modern, user-friendly applications and have a strong foundation in computer science from NIT Delhi.</p>
-                <p><a href="https://drive.google.com/file/d/1LL0kMe_g2rrBi-lBAnacBwZ6fXzdWMgL/view?usp=sharing" target="_blank" class="resume-link">View My Resume</a></p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-container">
-            <div class="experience-list">
-                <div class="experience-item">
-                    <h3>Outlier AI — Freelancer</h3>
-                    <span>Jan 2025 – Apr 2025</span>
-                    <ul>
-                        <li>Trained AI models using human feedback and input prompts to improve LLM alignment.</li>
-                        <li>Conducted user studies and delivered insights to improve customer satisfaction.</li>
-                        <li>Identified bugs, analyzed model outputs, and documented suggestions for fine-tuning.</li>
-                    </ul>
-                    <div class="skills-used">
-                        <h4>Skills Applied</h4>
-                        <div class="skill-tags">
-                            <span>AI/ML</span>
-                            <span>Data Analysis</span>
-                            <span>User Research</span>
-                            <span>Technical Documentation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/Bot detection software.png" alt="Secure Data Transfer Project">
-                    <div class="project-image-overlay">
-                        <a href="https://github.com/Madhav064/blockchain-data-transfer" class="github-link" target="_blank" aria-label="View project on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Bot Detection for <br>E-Commerce</h3>
-                        <a href="https://github.com/Madhav064/Bots-Detection-for-Walmart" class="github-button" target="_blank" aria-label="View project on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                    <p class="project-description">Bot Detection is a project designed to detect and analyze bot-like behavior on e-commerce websites. It consists of real time monitoring and a python backend for ML-based bot detection.</p>
-                    <div class="project-skills">
-                        <span>Python</span>
-                        <span>Streamlit</span>
-                        <span>Machine Learning</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/medicare fraud detectio.png" alt="MediCare Fraud Detection Project">
-                    <div class="project-image-overlay">
-                        <a href="https://github.com/Madhav064/MediCare-fraud-detection" class="github-link" target="_blank" aria-label="View project on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>MediCare Fraud Detection</h3>
-                        <a href="https://github.com/Madhav064/MediCare-fraud-detection" class="github-button" target="_blank" aria-label="View project on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                    <p class="project-description">ML-powered system detecting fraudulent Medicare providers with 91% accuracy using XGBoost and interactive Streamlit dashboard.</p>
-                    <div class="project-skills">
-                        <span>Python</span>
-                        <span>XGBoost</span>
-                        <span>Streamlit</span>
-                        <span>ML</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates & Achievements Section -->
-    <section id="certificates" class="certificates-section">
-        <h2 class="section-title">Certificates & Achievements</h2>
-        <ul>
-            <li>Google Cybersecurity Professional Certificate V2.<a href="https://www.credly.com/badges/e9196f6f-6a25-4cb2-ac36-39a78a231a96/public_url" target="_blank" rel="noopener noreferrer">  [Link]</a></li>
-            <li>Full-Stack Web Development Course from Udemy.<a href="https://www.udemy.com/certificate/" target="_blank" rel="noopener noreferrer">  [Link]</a></li>
-            <li>Finalist in Vishleshan'24 Annual Case Competition by VNIT Nagpur.<a href="https://www.linkedin.com/in/madhav-raj-sharma/overlay/1712930367125/single-media-viewer/?profileId=ACoAAEkOLT0BSr2gsMMFO-fOI5AIkU19QQGkPDc" target="_blank" rel="noopener noreferrer">  [Link]</a></li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2 class="section-title">Get In Touch</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-        <div class="social-links">
-            <a href="https://github.com/Madhav064" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/madhav-raj-sharma/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/madhav_80537/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.credly.com/users/madhav-raj-sharma" target="_blank" rel="noopener noreferrer" aria-label="Credly Profile">
-                <i class="fas fa-c"></i>
-            </a>
-            <a href="https://leetcode.com/u/madhav72/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile">
-                <i class="fas fa-code"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; <span id="current-year"></span> Madhav Raj. All rights reserved.</p>
-    </footer>
-
-    <script src="index.js"></script>
-</body>
-</html>
+</div>
+<div class="pt-2">
+    <a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white hover:bg-blue-700 hover:shadow-lg transition-all text-sm font-semibold tracking-wide shadow-md" href="https://drive.google.com/file/d/1LL0kMe_g2rrBi-lBAnacBwZ6fXzdWMgL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+    <span class="material-icons text-base">description</span> View Resume
+                    </a>
+</div>
+</div>
+<div class="w-full md:w-1/3 flex justify-center md:justify-end">
+<div class="w-48 h-48 md:w-56 md:h-56 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden border-4 border-white dark:border-gray-800 shadow-elegant">
+<img src="images/profile .jpg" alt="Madhav Raj" class="w-full h-full object-cover"/>
+</div>
+</div>
+</section>
+<section id="education">
+<div class="flex items-center gap-4 mb-8">
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white">Education</h2>
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-8 shadow-elegant border border-gray-100 dark:border-gray-800">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">National Institute of Technology Delhi</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark">New Delhi, Delhi</p>
+</div>
+<div class="mt-2 md:mt-0 text-right">
+<span class="inline-block px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-primary rounded-full text-xs font-semibold tracking-wide uppercase">Graduating 2027</span>
+</div>
+</div>
+<p class="text-gray-700 dark:text-gray-300 font-medium">Bachelor of Technology in Computer Science</p>
+</div>
+</section>
+<section id="experience">
+<div class="flex items-center gap-4 mb-10">
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white">Experience</h2>
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+</div>
+<div class="space-y-0 relative">
+<div class="timeline-item relative pl-10 pb-12 timeline-line">
+<div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-gray-900 shadow-sm z-10"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">J.P. Morgan's Software Engineering Simulation on Forage</h3>
+<span class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark mt-1 md:mt-0">Oct 2025</span>
+</div>
+<a class="text-primary text-sm hover:underline mb-3 inline-block font-medium" href="https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_4gRQ8fvA7b2DJF6hC_1761328933031_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">View Certificate <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+<ul class="list-disc list-outside ml-4 space-y-2 text-gray-600 dark:text-gray-400 text-sm leading-relaxed marker:text-gray-400">
+<li>Developed a Spring Boot microservice for real-time transaction processing using Kafka and H2 database.</li>
+<li>Integrated external REST APIs for incentive management and implemented robust validation and balance updates.</li>
+<li>Delivered secure REST endpoints, automated testing, and managed source control with Git/GitHub.</li>
+</ul>
+</div>
+<div class="timeline-item relative pl-10 pb-4 timeline-line">
+<div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-600 border-4 border-white dark:border-gray-900 shadow-sm z-10"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Outlier AI — Volunteer</h3>
+<span class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark mt-1 md:mt-0">Jan 2025 – Apr 2025</span>
+</div>
+<ul class="list-disc list-outside ml-4 space-y-2 text-gray-600 dark:text-gray-400 text-sm leading-relaxed marker:text-gray-400">
+<li>Contributed in training AI models using human feedback and input prompts to improve LLM alignment.</li>
+<li>Conducted 20+ user studies and delivered insights to improve customer satisfaction.</li>
+<li>Identified bugs, analysed model outputs, and documented suggestions to increase model efficiency.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="projects">
+<div class="flex items-center gap-4 mb-10">
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white">Projects</h2>
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<article class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-elegant hover:shadow-elegant-hover transition-all duration-300 group flex flex-col h-full">
+<div class="p-6 md:p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-display text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">PhalFresh</h3>
+<a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/Madhav064/PhalFresh---The-Fruit-Freshness-App" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+<i class="fab fa-github text-xl"></i>
+</a>
+</div>
+<div class="mb-4">
+<span class="text-xs font-semibold uppercase tracking-wider text-text-muted-light dark:text-text-muted-dark">Machine Learning • App Development</span>
+</div>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Computer vision model for fruit type recognition and freshness classification with 96% accuracy using CNN.
+                            </li>
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Implemented shelf-life estimation and real-time inference pipeline using TensorFlow &amp; HuggingFace.
+                            </li>
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Added predictive shelf-life estimation by analysing ripening patterns.
+                            </li>
+</ul>
+</div>
+</article>
+<article class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-elegant hover:shadow-elegant-hover transition-all duration-300 group flex flex-col h-full">
+<div class="p-6 md:p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-display text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Bot Detection System</h3>
+<a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/Madhav064/Real-time-Grinch-Bots-Detection" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+<i class="fab fa-github text-xl"></i>
+</a>
+</div>
+<div class="mb-4">
+<span class="text-xs font-semibold uppercase tracking-wider text-text-muted-light dark:text-text-muted-dark">Python • Machine Learning</span>
+</div>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Built a real-time bot detection system for an e-commerce platform during peak holiday traffic.
+                            </li>
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Achieved high prediction accuracy using data analysis on large datasets.
+                            </li>
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Simulated attacks with a self-built bot to validate the system.
+                            </li>
+</ul>
+</div>
+</article>
+<article class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-elegant hover:shadow-elegant-hover transition-all duration-300 group md:col-span-2">
+<div class="p-6 md:p-8">
+<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+<div>
+<h3 class="font-display text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">MediCare Fraud Analysis Software</h3>
+<div class="mt-2">
+<span class="text-xs font-semibold uppercase tracking-wider text-text-muted-light dark:text-text-muted-dark">Python • ML • Web Dev</span>
+</div>
+</div>
+<a class="mt-4 md:mt-0 text-gray-400 hover:text-primary transition-colors self-start" href="https://github.com/Madhav064/MediCare-Fraud-Detection" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+<i class="fab fa-github text-xl"></i>
+</a>
+</div>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mt-4">
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Built a machine learning system to detect fraudulent Medicare providers using public datasets.
+                            </li>
+<li class="flex items-start gap-2">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                Applied data cleaning, feature engineering, and trained an XGBoost model achieving high precision on fraud detection with an accuracy of 91% on all customer data.
+                            </li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+<section id="skills">
+<div class="flex items-center gap-4 mb-10">
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white">Technical Skills</h2>
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+<h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="material-icons text-primary text-sm">code</span> Languages
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">C++</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Python</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">JavaScript</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">SQL</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Java</span>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+<h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="material-icons text-primary text-sm">layers</span> Frameworks &amp; Libs
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">React.js</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Node.js</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Web3.js</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Streamlit</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Pandas</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Scikit-learn</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Spring</span>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+<h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="material-icons text-primary text-sm">psychology</span> Soft Skills
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Communication</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Leadership</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Project Mgmt</span>
+<span class="px-3 py-1 bg-white dark:bg-gray-800 rounded-md text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-700">Problem Solving</span>
+</div>
+</div>
+</div>
+</section>
+<section id="achievements">
+<div class="flex items-center gap-4 mb-10">
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white">Certificates &amp; Achievements</h2>
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl p-8 shadow-elegant">
+<ul class="space-y-4">
+<li class="flex gap-4 items-start">
+<div class="mt-1 w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
+<i class="fas fa-certificate text-sm"></i>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-gray-900 dark:text-white">Google Cybersecurity Professional Certificate V2</h4>
+<a class="text-primary text-sm hover:underline mt-1 inline-block font-medium" href="https://www.credly.com/badges/e9196f6f-6a25-4cb2-ac36-39a78a231a96/linked_in_profile" target="_blank" rel="noopener noreferrer">View Certificate <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="mt-1 w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
+<i class="fas fa-graduation-cap text-sm"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Full-Stack Web Development Course from Udemy</h4>
+<a class="text-primary text-sm hover:underline mt-1 inline-block font-medium" href="#">View Certificate <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="mt-1 w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
+<i class="fas fa-trophy text-sm"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Finalist in Vishleshan’24 Annual Flagship Case Competition</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">by VNIT Nagpur</p>
+<a class="text-primary text-sm hover:underline mt-1 inline-block font-medium" href="https://www.linkedin.com/in/madhav-raj-sharma/overlay/Honor/1385899419/treasury/?profileId=ACoAAEkOLT0BSr2gsMMFO-fOI5AIkU19QQGkPDc" target="_blank" rel="noopener noreferrer">View Certificate <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="coursework">
+<div class="flex items-center gap-4 mb-8">
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white">Coursework &amp; Extra Curriculum</h2>
+<span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+<h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700 pb-2">Academic Courses</h3>
+<div class="flex flex-wrap gap-2">
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">OOP</span>
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">Data Structures &amp; Algo</span>
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">DBMS</span>
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">Operating Systems</span>
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">Computer Architecture</span>
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">Artificial Intelligence</span>
+<span class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full">Software Engineering</span>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+<h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700 pb-2">Extra-curricular Activities</h3>
+<ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+<li class="flex items-start gap-2">
+<i class="fas fa-check-circle text-primary mt-1 text-xs"></i>
+                             Participated in various case study competitions and hackathon via unstop platform and hack2skill.
+                         </li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check-circle text-primary mt-1 text-xs"></i>
+                             Member of GDSC club at NIT Delhi.
+                         </li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check-circle text-primary mt-1 text-xs"></i>
+                             Player in college football team.
+                         </li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-gray-200 dark:border-gray-800 bg-surface-light dark:bg-surface-dark py-12 mt-12 transition-colors duration-300" id="contact">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6">Let's Connect</h2>
+<div class="flex justify-center gap-6 mb-8">
+<a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all" href="https://www.linkedin.com/in/madhav-raj-sharma/" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all" href="https://github.com/Madhav064" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-github"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all" href="mailto:madhav70sharma@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">© 2024 Madhav Raj. All rights reserved.</p>
+</div>
+</footer>
+<div class="fixed bottom-6 right-6 z-50">
+<button class="p-3 rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-yellow-400 shadow-lg border border-gray-200 dark:border-gray-700 hover:scale-110 transition-transform" id="theme-toggle">
+<span class="material-icons" id="theme-icon">dark_mode</span>
+</button>
+</div>
+<script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+        // Check local storage or system preference
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+            themeIcon.textContent = 'light_mode';
+        } else {
+            html.classList.remove('dark');
+            themeIcon.textContent = 'dark_mode';
+        }
+        themeToggleBtn.addEventListener('click', function() {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                themeIcon.textContent = 'dark_mode';
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                themeIcon.textContent = 'light_mode';
+            }
+        });
+    </script>
+</body></html>

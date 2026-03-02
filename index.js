@@ -139,12 +139,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project Card Effects
     function initProjectHoverEffects() {
         projectCards.forEach(card => {
+            const image = card.querySelector('.project-image img');
+            if (!image) return;
+
             card.addEventListener('mouseenter', function() {
-                this.querySelector('.project-img img').style.transform = 'scale(1.1)';
+                image.style.transform = 'scale(1.08)';
             });
 
             card.addEventListener('mouseleave', function() {
-                this.querySelector('.project-img img').style.transform = 'scale(1)';
+                image.style.transform = 'scale(1)';
             });
         });
     }
